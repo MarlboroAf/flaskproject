@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>information_with_type</title>
+</head>
+<body>
+<h1>  LFB information display with property type  </h1>
+    {% for row in rows %}
+    <p>Information:
+        {{row["incident_id"]}}  |
+       {{row["date_of_call"]}} |
+        {{ row["postcode_full"]}} |
+        {{ row["postcode_district"]}} |
+        {{ row["property_name"]}}
+    </p>
+    {% endfor %}
+</body>
+</html>

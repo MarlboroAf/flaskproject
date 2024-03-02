@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LFB information</title>
+</head>
+<body>
+    <h1>  LFB information display  </h1>
+    {% for row in rows %}
+    <p>Information:
+        <b> <a href={{ url_for('details', id= row['incident_id']) }}>{{row["incident_id"]}}</a></b> |
+       {{row["date_of_call"]}} |
+        {{ row["postcode_full"]}} |
+        {{ row["postcode_district"]}} |
+       {{row['property_id']}}
+    </p>
+    {% endfor %}
+</body>
+</html>

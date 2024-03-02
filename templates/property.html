@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>property</title>
+</head>
+<body>
+    <h1> All property type </h1>
+    {% for row in rows %}
+    <p>Property type:
+        {{row["property_id"]}}  |
+       {{row["property_name"]}}
+    </p>
+    {% endfor %}
+</body>
+</html>

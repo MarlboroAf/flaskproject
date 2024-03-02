@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>detail</title>
+</head>
+<body>
+    <h1>Detail</h1>
+    <p>{% for row in rows %}
+       {{row["incident_id"]}}|
+        {{ row["postcode_full"]}} |
+        {{ row["postcode_district"]}} |
+       {{row["property_name"]}}
+    </p>
+{% endfor %}
+
+</body>
+</html>
